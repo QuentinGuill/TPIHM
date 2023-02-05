@@ -1,0 +1,420 @@
+<div class="content">
+    <div class="card-expand">
+        <h2>Programation</h2>
+        <div class="row">
+            <div class="col-12" (click)="clickEvent(status, 0)" [ngClass]="{'col-lg-6' : status.statusList[0], 
+                                                                    'col-lg-12' : !status.statusList[0], 
+                                                                    'fade-card' : status.statusGeneral && status.statusList[0]}">
+                <div class="card card-section slide-left">
+                    <div class="d-flex align-items-center d-inline-block">
+                        <h4>Programation Procédurale</h4>
+                        <span class="etendre-block">Etendre<span class="echelon-bas" [ngClass]="{'d-none' : !status.statusList[0]}">▼</span><span class="echelon-bas" [ngClass]="{'d-none' : status.statusList[0]}">▲</span></span>
+                    </div>
+                </div>
+                <div class="card fading-card" [ngClass]="{'fade-content' : status.statusList[0]}">
+                    <div class="row">
+                        <div class="col-6">
+                            <p>C: <span class="rating">★ ★ ★ ★ ★</span></p>
+                            <p>Python: <span class="rating">★ ★ ★ ★ ★</span></p>
+                        </div>
+                        <div class="col-6">
+                            <p>R: <span class="rating">★ ★ ★ ★ ★</span></p>
+                            <p>Pascal: <span class="rating">★ ★ ★ ★ ★</span></p>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+            <div class="col-12" (click)="clickEvent(status, 1)" [ngClass]="{'col-lg-6' : status.statusList[1], 
+                                                                    'col-lg-12' : !status.statusList[1], 
+                                                                    'fade-card' :  status.statusGeneral && status.statusList[1]}">
+                <div class="card card-section slide-right">
+                    <div class="d-flex align-items-center d-inline-block">
+                        <h4>Programation Fonctionelle</h4>
+                        <span class="etendre-block">Etendre<span class="echelon-bas" [ngClass]="{'d-none' : !status.statusList[1]}">▼</span><span class="echelon-bas" [ngClass]="{'d-none' : status.statusList[1]}">▲</span></span>
+                    </div>
+                </div>
+                <div class="card fading-card" [ngClass]="{'fade-content' : status.statusList[1]}">
+                    <p>Prolog: <span class="rating">★ ★ ★ ★ ★</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12" (click)="clickEvent(status, 2)" [ngClass]="{'col-lg-6' : status.statusList[2], 
+                                                                    'col-lg-12' : !status.statusList[2], 
+                                                                    'fade-card' : status.statusGeneral && status.statusList[2]}">
+                <div class="card card-section slide-left">
+                    <div class="d-flex align-items-center d-inline-block">
+                        <h4>Programation Logique</h4>
+                        <span class="etendre-block">Etendre<span class="echelon-bas" [ngClass]="{'d-none' : !status.statusList[2]}">▼</span><span class="echelon-bas" [ngClass]="{'d-none' : status.statusList[2]}">▲</span></span>
+                    </div>
+                </div>
+                <div class="card fading-card" [ngClass]="{'fade-content' : status.statusList[2]}">
+                    <div class="row">
+                        <div class="col-6">
+                            <p>OCaml: <span class="rating">★ ★ ★ ★ ★</span></p>
+                        </div>
+                        <div class="col-6">
+                            <p>Scala: <span class="rating">★ ★ ★ ★ ★</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12" (click)="clickEvent(status, 3)" [ngClass]="{'col-lg-6' : status.statusList[3], 
+                                                                    'col-lg-12' : !status.statusList[3], 
+                                                                    'fade-card' : status.statusGeneral && status.statusList[3]}">
+                <div class="card card-section slide-right">
+                    <div class="d-flex align-items-center d-inline-block">
+                        <h4>Programation Objet</h4>
+                        <span class="etendre-block">Etendre<span class="echelon-bas" [ngClass]="{'d-none' : !status.statusList[3]}">▼</span><span class="echelon-bas" [ngClass]="{'d-none' : status.statusList[3]}">▲</span></span>
+                    </div>
+                </div>
+                <div class="card fading-card" [ngClass]="{'fade-content' : status.statusList[3]}">
+                    <div class="row">
+                        <div class="col-6">
+                            <p>Java: <span class="rating">★ ★ ★ ★ ★</span></p>
+                            <p>C++: <span class="rating">★ ★ ★ ★ ★</span></p>
+                        </div>
+                        <div class="col-6">
+                            <p>C#: <span class="rating">★ ★ ★ ★ ★</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="card-expand">
+        <h2>Developement Web</h2>
+        <div class="row">
+            <div class="col-12" (click)="clickEvent(statusWeb, 0)" [ngClass]="{'col-lg-6' : statusWeb.statusList[0], 
+                                                                    'col-lg-12' : !statusWeb.statusList[0], 
+                                                                    'fade-card' : statusWeb.statusGeneral && statusWeb.statusList[0]}">
+                <div class="card card-section slide-left">
+                    <div class="d-flex align-items-center d-inline-block">
+                        <h4>Front</h4>
+                        <span class="etendre-block">Etendre<span class="echelon-bas" [ngClass]="{'d-none' : !statusWeb.statusList[0]}">▼</span><span class="echelon-bas" [ngClass]="{'d-none' : statusWeb.statusList[0]}">▲</span></span>
+                    </div>
+                </div>
+                <div class="card fading-card" [ngClass]="{'fade-content' : statusWeb.statusList[0]}">
+                    <div class="row">
+                        <div class="col-6">
+                            <p>HTML: <span class="rating">★ ★ ★ ★ ★</span></p>
+                            <p>Javascript: <span class="rating">★ ★ ★ ★ ★</span></p>
+                        </div>
+                        <div class="col-6">
+                            <p>Laravel: <span class="rating">★ ★ ★ ★ ★</span></p>
+                            <p>CSS: <span class="rating">★ ★ ★ ★ ★</span></p>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+            <div class="col-12" (click)="clickEvent(statusWeb, 1)" [ngClass]="{'col-lg-6' : statusWeb.statusList[1], 
+                                                                    'col-lg-12' : !statusWeb.statusList[1], 
+                                                                    'fade-card' :  statusWeb.statusGeneral && statusWeb.statusList[1]}">
+                <div class="card card-section slide-right">
+                    <div class="d-flex align-items-center d-inline-block">
+                        <h4>Back</h4>
+                        <span class="etendre-block">Etendre<span class="echelon-bas" [ngClass]="{'d-none' : !statusWeb.statusList[1]}">▼</span><span class="echelon-bas" [ngClass]="{'d-none' : statusWeb.statusList[1]}">▲</span></span>
+                    </div>
+                </div>
+                <div class="card fading-card" [ngClass]="{'fade-content' : statusWeb.statusList[1]}">
+                    <div class="row">
+                        <div class="col-6">
+                            <p>PHP: <span class="rating">★ ★ ★ ★ ★</span></p>
+                        </div>
+                        <div class="col-6">
+                            <p>Angular: <span class="rating">★ ★ ★ ★ ★</span></p>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12" (click)="clickEvent(statusWeb, 2)" [ngClass]="{'col-lg-6' : statusWeb.statusList[2], 
+                                                                    'col-lg-12' : !statusWeb.statusList[2], 
+                                                                    'fade-card' : statusWeb.statusGeneral && statusWeb.statusList[2]}">
+                <div class="card card-section slide-left">
+                    <div class="d-flex align-items-center d-inline-block">
+                        <h4>Cloud</h4>
+                        <span class="etendre-block">Etendre<span class="echelon-bas" [ngClass]="{'d-none' : !statusWeb.statusList[2]}">▼</span><span class="echelon-bas" [ngClass]="{'d-none' : statusWeb.statusList[2]}">▲</span></span>
+                    </div>
+                </div>
+                <div class="card fading-card" [ngClass]="{'fade-content' : statusWeb.statusList[2]}">
+                    <div class="row">
+                        <div class="col-6">
+                            <p>FireBase: <span class="rating">★ ★ ★ ★ ★</span></p>
+                        </div>
+                        <div class="col-6">
+                            <p>Docker: <span class="rating">★ ★ ★ ★ ★</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12" (click)="clickEvent(statusWeb, 3)" [ngClass]="{'col-lg-6' : statusWeb.statusList[3], 
+                                                                    'col-lg-12' : !statusWeb.statusList[3], 
+                                                                    'fade-card' : statusWeb.statusGeneral && statusWeb.statusList[3]}">
+                <div class="card card-section slide-right">
+                    <div class="d-flex align-items-center d-inline-block">
+                        <h4>Base de données</h4>
+                        <span class="etendre-block">Etendre<span class="echelon-bas" [ngClass]="{'d-none' : !statusWeb.statusList[3]}">▼</span><span class="echelon-bas" [ngClass]="{'d-none' : statusWeb.statusList[3]}">▲</span></span>
+                    </div>
+                </div>
+                <div class="card fading-card" [ngClass]="{'fade-content' : statusWeb.statusList[3]}">
+                    <div class="row">
+                        <div class="col-6">
+                            <p>Sparqul: <span class="rating">★ ★ ★ ★ ★</span></p>
+                        </div>
+                        <div class="col-6">
+                            <p>MySQL: <span class="rating">★ ★ ★ ★ ★</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-expand">
+        <h2>Expertise Logiciel</h2>
+        <div class="row">
+            <div class="col-12" (click)="clickEvent(statusAutre, 0)" [ngClass]="{'col-lg-6' : statusAutre.statusList[0], 
+                                                                    'col-lg-12' : !statusAutre.statusList[0], 
+                                                                    'fade-card' : statusAutre.statusGeneral && statusAutre.statusList[0]}">
+                <div class="card card-section slide-left">
+                    <div class="d-flex align-items-center d-inline-block">
+                        <h4>Développement de Jeux</h4>
+                        <span class="etendre-block">Etendre<span class="echelon-bas" [ngClass]="{'d-none' : !statusAutre.statusList[0]}">▼</span><span class="echelon-bas" [ngClass]="{'d-none' : statusAutre.statusList[0]}">▲</span></span>
+                    </div>
+                </div>
+                <div class="card fading-card" [ngClass]="{'fade-content' : statusAutre.statusList[0]}">
+                    <div class="row">
+                        <div class="col-6">
+                            <p>Unity: <span class="rating">★ ★ ★ ★ ★</span></p>
+                        </div>
+                        <div class="col-6">
+                        </div>
+                    </div>    
+                </div>
+            </div>
+            <div class="col-12" (click)="clickEvent(statusAutre, 1)" [ngClass]="{'col-lg-6' : statusAutre.statusList[1], 
+                                                                    'col-lg-12' : !statusAutre.statusList[1], 
+                                                                    'fade-card' :  statusAutre.statusGeneral && statusAutre.statusList[1]}">
+                <div class="card card-section slide-right">
+                    <div class="d-flex align-items-center d-inline-block">
+                        <h4>Low-Code</h4>
+                        <span class="etendre-block">Etendre<span class="echelon-bas" [ngClass]="{'d-none' : !statusAutre.statusList[1]}">▼</span><span class="echelon-bas" [ngClass]="{'d-none' : statusAutre.statusList[1]}">▲</span></span>
+                    </div>
+                </div>
+                <div class="card fading-card" [ngClass]="{'fade-content' : statusAutre.statusList[1]}">
+                    <p>Mendix: <span class="rating">★ ★ ★ ★ ★</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12" (click)="clickEvent(statusAutre, 2)" [ngClass]="{'col-lg-6' : statusAutre.statusList[2], 
+                                                                    'col-lg-12' : !statusAutre.statusList[2], 
+                                                                    'fade-card' : statusAutre.statusGeneral && statusAutre.statusList[2]}">
+                <div class="card card-section slide-left">
+                    <div class="d-flex align-items-center d-inline-block">
+                        <h4>Modélisation 3D</h4>
+                        <span class="etendre-block">Etendre<span class="echelon-bas" [ngClass]="{'d-none' : !statusAutre.statusList[2]}">▼</span><span class="echelon-bas" [ngClass]="{'d-none' : statusAutre.statusList[2]}">▲</span></span>
+                    </div>
+                </div>
+                <div class="card fading-card" [ngClass]="{'fade-content' : statusAutre.statusList[2]}">
+                    <div class="row">
+                        <div class="col-6">
+                            <p>Blender: <span class="rating">★ ★ ★ ★ ★</span></p>
+                        </div>
+                        <div class="col-6">
+                        </div>
+                    </div>    
+                </div>
+            </div>
+            <div class="col-12" (click)="clickEvent(statusAutre, 3)" [ngClass]="{'col-lg-6' : statusAutre.statusList[3], 
+                                                                    'col-lg-12' : !statusAutre.statusList[3], 
+                                                                    'fade-card' :  statusAutre.statusGeneral && statusAutre.statusList[3]}">
+                <div class="card card-section slide-right">
+                    <div class="d-flex align-items-center d-inline-block">
+                        <h4>Dessin</h4>
+                        <span class="etendre-block">Etendre<span class="echelon-bas" [ngClass]="{'d-none' : !statusAutre.statusList[3]}">▼</span><span class="echelon-bas" [ngClass]="{'d-none' : statusAutre.statusList[3]}">▲</span></span>
+                    </div>
+                </div>
+                <div class="card fading-card" [ngClass]="{'fade-content' : statusAutre.statusList[3]}">
+                    <div class="row">
+                        <div class="col-6">
+                            <p>Paint.net: <span class="rating">★ ★ ★ ★ ★</span></p>
+                        </div>
+                        <div class="col-6">
+                            <p>Krita: <span class="rating">★ ★ ★ ★ ★</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--<div class="content">
+    <h2>Programation</h2>
+    <div class="row" style="margin-right:0px; margin-left:0px;">
+        <div class="col">
+            <div class="card">
+                <div class="card-title">
+                    <h4>Programation Procédurale</h4>
+                </div>
+                <div class="card-content">
+                    <ul>
+                        <li>
+                            C
+                        </li>
+                        <li>
+                            Pascal
+                        </li>
+                        <li>
+                            Python
+                        </li>
+                        <li>
+                            R
+                        </li>
+                        <li>
+                            Windev
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-title">
+                    <h4>Programation Logique</h4>
+                </div>
+                <div class="card-content">
+                    <ul>
+                        <li>
+                            Prolog
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-title">
+                    <h4>Programation Fonctionelle</h4>
+                </div>
+                <div class="card-content">
+                    <ul>
+                        <li>
+                            Ocaml
+                        </li>
+                        <li>
+                            Scala
+                        </li>
+                        <li>
+                            Python
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-title">
+                    <h4>Programation Objet</h4>
+                </div>
+                <div class="card-content">
+                    <ul>
+                        <li>
+                            Java
+                        </li>
+                        <li>
+                            C++
+                        </li>
+                        <li>
+                            C#
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-title">
+            <h4>Dévellopement Web</h4>
+        </div>
+        <div class="card-content">
+            <ul>
+                <li>
+                    HTML, CSS, PhP, Javascript
+                </li>
+                <li>
+                    Laravel
+                </li>
+                <li>
+                    Angular
+                </li>
+                <li>
+                    Mendix
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-title">
+            <h4>Base de Donnée</h4>
+        </div>
+        <div class="card-content">
+            <ul>
+                <li>
+                    MySQL
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-title">
+            <h4>Cloud</h4>
+        </div>
+        <div class="card-content">
+            <ul>
+                <li>
+                    FireBase
+                </li>
+                <li>
+                    Docker
+                </li>
+                <li>
+                    Vim
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row" style="margin-right:0px; margin-left:0px;">
+        <div class="col">
+            <div class="card">
+                <div class="card-title">
+                    <h4>Développement de Jeu</h4>
+                </div>
+                <div class="card-content">
+                    <ul>
+                        <li>
+                            Unity
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-title">
+                    <h4>Low-Code</h4>
+                </div>
+                <div class="card-content">
+                    <ul>
+                        <li>
+                            Mendix
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>-->
