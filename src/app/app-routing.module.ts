@@ -9,27 +9,27 @@ import { PersoComponent } from './perso/perso.component';
 
 const routes: Routes = [
   {
-    path: 'Pages/compétences',
+    path: 'compétences',
     component: CompetencesComponent
   },
   {
-    path: 'Pages/langages',
+    path: 'langages',
     component: LanguagesComponent
   },
   {
-    path: 'Pages/',
+    path: '',
     component: AccueilComponent
   },
   {
-    path: 'Pages/experienceProfesionelle',
+    path: 'experienceProfesionelle',
     component: ExpeproComponent
   },
   {
-    path: 'Pages/cursusScolaire',
+    path: 'cursusScolaire',
     component: CursusscolaireComponent
   },
   {
-    path: 'Pages/personel',
+    path: 'personel',
     component: PersoComponent
   }
 ];
